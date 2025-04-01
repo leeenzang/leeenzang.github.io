@@ -1,0 +1,299 @@
+<!--메인 뼈대-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>은진햄 포트폴리오</title>
+    <link rel="stylesheet" href="style.css" /> <!-- ← 이거 꼭 필요!! -->
+    <!-- 구글 폰트 링크 추가 (꼭 <head> 안에 넣어야 함!) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+<!--class는 css에서 스타일 줄 때 쓰려고 붙인 이름
+ul은 순서 없는 리스트, li는 순서있는 리스트
+href=#about 이건 해당 섹션으로 이동하게 하는 앵커임
+id가 about인 곳으로 내려가는 거삼-->
+    <nav class="navbar">
+        <!--메인 뼈대-->
+        <div class = "nav-container">
+            <!--왼쪽-->
+            <div class="nav-left">
+                <a href="#home" class="nav-logo">LeeEunJin</a>
+            </div>
+
+            <!--오른쪽 나머지 메뉴-->
+            <ul class="nav-right">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>이은진의 포트폴리오</h1>
+        </div>
+    </section>
+
+
+    <!-- About me -->
+    <section id="about">
+        <h2 class="section-title">ABOUT ME</h2>
+
+        <div class="about-grid">
+            <div class="about-item">
+                <span class="about-icon">👩🏻‍💻</span>
+                <h3 class="about-title">이름</h3>
+                <p class="about-text">이은진</p>
+            </div>
+            <div class="about-item">
+                <span class="about-icon">📧</span>
+                <h3 class="about-title">이메일</h3>
+                <p class="about-text">enzn@kakao.com</p>
+            </div>
+            <div class="about-item">
+                <span class="about-icon">💻</span>
+                <h3 class="about-title">GitHub</h3>
+                <p class="about-text"><a href="https://github.com/leeenzang?tab=repositories" target="_blank">github.com/leeenzang</a></p>
+            </div>
+            <div class="about-item">
+                <span class="about-icon">📝</span>
+                <h3 class="about-title">Tistory</h3>
+                <p class="about-text"><a href="https://enzn.tistory.com" target="_blank">enzn.tistory.com</a></p>
+            </div>
+            <div class="about-item">
+                <span class="about-icon">🎓</span>
+                <h3 class="about-title">학력</h3>
+                <p class="about-text">한국외대 컴퓨터공학과</p>
+            </div>
+            <div class="about-item">
+                <span class="about-icon">✨</span>
+                <h3 class="about-title">MBTI</h3>
+                <p class="about-text">ESTJ</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <h2 class="section-title">SKILLS</h2>
+
+        <div class="skills-box">
+            <!-- Language -->
+            <div class="skill-row">
+                <div class="skill-category">
+                    <span>Language</span>
+                </div>
+                <div class="skill-tags">
+                    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python Badge">
+                    <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java Badge">
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-row">
+                <div class="skill-category">
+                    <span>Framework & Libraries</span>
+                </div>
+                <div class="skill-tags">
+                    <img src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white" alt="Django Badge">
+                    <img src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Badge">
+                    <img src="https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray" alt="Django REST Badge">
+
+                    <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas Badge">
+                    <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="Numpy Badge">
+                    <img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black" alt="Matplotlib Badge">
+                    <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit Badge">
+                    <img src="https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white" alt="Keras Badge">
+                    <img src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white" alt="Tensor Badge">
+                    <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" alt="Pytorch Badge">
+
+                    
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-row">
+                <div class="skill-category">
+                    <span>Tools</span>
+                </div>
+                <div class="skill-tags">
+                    <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman Badge">
+                    <img src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white" alt="Heroku Badge">
+                    <img src="https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" alt="IntelliJ IDEA Badge">
+                    <img src="https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Colab Badge">
+                    <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Visual Studio Code Badge">
+                    <img src="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter Badge">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Arards-->
+    <section id="awards">
+        <h2 class="section-title">AWARDS</h2>
+    
+        <div class="award-grid">
+            <div class="award-card">
+                <img src="icons/award.png" alt="Award" class="award-icon" />
+                <h3>용인시 SW/AI 해커톤</h3>
+                <p class="award-date">2023.11 · 용인시</p>
+                <p class="award-desc">트위터 텍스트에 포함된 감성을 분류하는 AI모델 개발</p>
+            </div>
+
+            <div class="award-card">
+                <img src="icons/award.png" alt="Award" class="award-icon" />
+                <h3>제 1회 DIVE 2024</h3>
+                <p class="award-date">2024.10 · 부산시</p>
+                <p class="award-desc">바다지킴이를 위한 앱 개발 KIOSTx(사)동아시아바다공통체오션 트랙 3등</p>
+            </div>
+
+            <div class="award-card">
+                <img src="icons/award.png" alt="Award" class="award-icon" />
+                <h3>용인시와 함께하는 한국외대 SW중심대학-GBT해커톤</h3>
+                <p class="award-date">2024.11 · 창업진흥원</p>
+                <p class="award-desc">용인시 뉴스의 제목과 본문 키워드를 통해 기사의 카테고리를 분류하는 AI 모델 개발 7위로 본선 진출 후 장려상 수상</p>
+            </div>
+
+            <div class="award-card">
+                <img src="icons/award.png" alt="Award" class="award-icon" />
+                <h3>AWS 딥레이서</h3>
+                <p class="award-date">2024.12 · 중소벤처기업</p>
+                <p class="award-desc">장려상 수상</p>
+            </div>
+        </div>
+    </section>
+
+
+
+<!--엑티비티-->
+    <section id="activities">
+        <h2 class="section-title">ACTIVITIES</h2>
+        
+        <div class="activity-list">
+            <div class="activity-card">
+                <span class="activity-label">Program</span>
+                <h3>데이터 청년 캠퍼스</h3>
+                <p class="activity-meta">2023.06 - 2023.07 · 한국데이터산업진흥원 주관</p>
+                <p class="activity-desc">자연어처리 기반 딥러닝기술 융합과정</p>
+            </div>
+
+            <div class="activity-card">
+                <span class="activity-label">Program</span>
+                <h3>LG AIMers 4기</h3>
+                <p class="activity-meta">2024.01 - 2024.02 · LG AI연구원, 고용노동부 주관</p>
+                <p class="activity-desc">LG MQL 데이터 기반 B2B 영업기회 창출 예측 모델 개발 해커톤 844팀 중 31위로 본선 진출</p>
+            </div>
+
+            <div class="activity-card">
+                <span class="activity-label">Research</span>
+                <h3>Stable Diffusion 기반 한국 전통 수묵화 디테일 비교 연구</h3>
+                <p class="activity-meta">2025.02 · IPIU 학회 포스터 논문 게시</p>
+                <p class="activity-desc">파인튜닝 기법을 활용한 이미지 생성 성능 비교 연구</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--프로젝트-->
+
+    <section id="projects">
+        <h2 class="section-title">PROJECTS</h2>
+    
+        <div class="project-filter">
+            <label>
+                <input type="checkbox" id="featured-toggle" />
+                주요 프로젝트만 보기
+            </label>
+        </div>
+    
+        <div class="project-grid">
+        <!-- 카드 하나 -->
+            <div class="project-card" data-featured="true">
+                <div class="card-image">
+                    <img src="images/p_ap.jpeg" alt="프로젝트 이미지"/>
+
+                </div>
+                <div class="card-content">
+                    <h3>Attention Please!</h3>
+                    <p class="desc">발표를 두려워하는 사람들을 위한 AI 기반 발표 연습 및 실시간 피드백 플랫폼</p>
+                    <div class="tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">VISION</span>
+                        <span class="tag">Django</span>
+                    </div>
+                </div>
+                <div class="card-hover">
+                    <a href="#" class="btn">자세히 보기</a>
+                    <a href="#" class="btn">Github</a>
+                </div>
+            </div>
+        <!-- 추가 카드들 위처럼 반복 -->
+                <!-- 카드 하나 -->
+
+            <div class="project-card" data-featured="false">
+                <div class="card-image">
+                    <img src="images/p_f.png" alt="프로젝트 이미지"/>
+                </div>
+                <div class="card-content">
+                    <h3>청개고리</h3>
+                    <p class="desc">학생 개발자와 의뢰자를 연결해주는 개발 중개 플랫폼</p>
+                    <div class="tags">
+                        <span class="tag">SPRING</span>
+                        <span class="tag">중개</span>
+                    </div>
+                </div>
+                <div class="card-hover">
+                    <a href="#" class="btn">자세히 보기</a>
+                    <a href="#" class="btn">Github</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-featured="true">
+                <div class="card-image">
+                    <img src="images/p_n.png" alt="프로젝트 이미지"/>
+                </div>
+                <div class="card-content">
+                    <h3>네이밍</h3>
+                    <p class="desc">GPT API를 이용한 상호명 추천 생성기</p>
+                    <div class="tags">
+                        <span class="tag">생성형 AI</span>
+                        <span class="tag">LLM</span>
+                        <span class="tag">FineTunedGPT</span>
+                        
+                    </div>
+                </div>
+                <div class="card-hover">
+                    <a href="#" class="btn">자세히 보기</a>
+                    <a href="#" class="btn">Github</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-message">Thanks for visiting my portfolio 🙌</p>
+        <p class="footer-copy">© 2025 Eunjin Lee. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
