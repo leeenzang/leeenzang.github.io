@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>은진햄 포트폴리오</title>
+    <title>이은진 포트폴리오</title>
     <link rel="stylesheet" href="style.css" /> <!-- ← 이거 꼭 필요!! -->
     <!-- 구글 폰트 링크 추가 (꼭 <head> 안에 넣어야 함!) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +42,8 @@ id가 about인 곳으로 내려가는 거삼-->
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>이은진의 포트폴리오</h1>
+            <h1>이은진 포트폴리오</h1>
+            <p></p>
         </div>
     </section>
 
@@ -217,76 +218,90 @@ id가 about인 곳으로 내려가는 거삼-->
     <section id="projects">
         <h2 class="section-title">PROJECTS</h2>
     
-        <div class="project-filter">
-            <label>
-                <input type="checkbox" id="featured-toggle" />
-                주요 프로젝트만 보기
-            </label>
-        </div>
+
     
         <div class="project-grid">
+            <div class="project-card">
+                <h2 class="project-title">네이밍</h2>
+                <p class="project-date">2024.03 - 2024.06 (GPT API 파인튜닝 담당)</p>
+                <hr class="project-divider" />
+                <h3 class="project-subtitle">GPT 기반의 상호명 추천 생성기</h3>
+                <ul class="project-features">
+                    <li>사용자에게 업종, 키워드 등을 입력받아 GPT가 적절한 브랜드명을 생성하여 제안</li>
+                    <li>GPT API를 기반으로 특정 업종,키워드에 맞는 결과를 생성하기 위해 파인튜닝 직접 수행</li>
+                </ul>
+                <div class="project-tags">
+                    <span class="tag">OPENAI GPT-3.5 API</span>
+                </div>
+                <button class="readme-btn">📄 README</button>
+            </div>
         <!-- 카드 하나 -->
-            <div class="project-card" data-featured="true">
-                <div class="card-image">
-                    <img src="images/p_ap.jpeg" alt="프로젝트 이미지"/>
-
+            <div class="project-card">
+                <h2 class="project-title">Attention Please!</h2>
+                <p class="project-date">2023.07 - 2023.08 (백엔드 담당)</p>
+                <hr class="project-divider" />
+                <h3 class="project-subtitle">발표를 두려워하는 사람들을 위한 AI기반 발표 연습 피드백 플랫폼</h3>
+                <ul class="project-features">
+                    <li>발표자의 언어적 요소와 비언어적 요소를 분석해 피드백 제공</li>
+                    <li>AI팀의 분석 모델과 프론트엔드 간 데이터 흐름 연결하는 Django REST API 백엔드 개발</li>
+                    <li>Swagger 기반 API 문서화 및 Postman을 활용한 백엔드 테스트 수행</li>
+                    <li>발표 이력 저장 및 시각화 기능 제공으로 사용자 성장 추적 가능</li>
+                </ul>
+                <div class="project-tags">
+                    <span class="tag">Django REST Framework</span>
+                    <span class="tag">Swagger</span>
+                    <span class="tag">Postman</span>
                 </div>
-                <div class="card-content">
-                    <h3>Attention Please!</h3>
-                    <p class="desc">발표를 두려워하는 사람들을 위한 AI 기반 발표 연습 및 실시간 피드백 플랫폼</p>
-                    <div class="tags">
-                        <span class="tag">NLP</span>
-                        <span class="tag">VISION</span>
-                        <span class="tag">Django</span>
-                    </div>
-                </div>
-                <div class="card-hover">
-                    <a href="#" class="btn">자세히 보기</a>
-                    <a href="#" class="btn">Github</a>
-                </div>
-            </div>
-        <!-- 추가 카드들 위처럼 반복 -->
-                <!-- 카드 하나 -->
-
-            <div class="project-card" data-featured="false">
-                <div class="card-image">
-                    <img src="images/p_f.png" alt="프로젝트 이미지"/>
-                </div>
-                <div class="card-content">
-                    <h3>청개고리</h3>
-                    <p class="desc">학생 개발자와 의뢰자를 연결해주는 개발 중개 플랫폼</p>
-                    <div class="tags">
-                        <span class="tag">SPRING</span>
-                        <span class="tag">중개</span>
-                    </div>
-                </div>
-                <div class="card-hover">
-                    <a href="#" class="btn">자세히 보기</a>
-                    <a href="#" class="btn">Github</a>
-                </div>
-            </div>
-
-            <div class="project-card" data-featured="true">
-                <div class="card-image">
-                    <img src="images/p_n.png" alt="프로젝트 이미지"/>
-                </div>
-                <div class="card-content">
-                    <h3>네이밍</h3>
-                    <p class="desc">GPT API를 이용한 상호명 추천 생성기</p>
-                    <div class="tags">
-                        <span class="tag">생성형 AI</span>
-                        <span class="tag">LLM</span>
-                        <span class="tag">FineTunedGPT</span>
+                <button class="readme-btn" onclick="openModal('moyeo-modal')">📄 README</button>
+                
+                <!-- 모달창 -->
+                <div class="modal" id="moyeo-modal">
+                    <div class="modal-container">
                         
+                        <!-- README 헤더 -->
+                        <div class="modal-header">
+                            <span class="modal-title">README</span>
+                            <span class="close-btn" onclick="closeModal('moyeo-modal')">&times;</span>
+                        </div>
+                    
+                        <!-- 내용 -->
+                        <div class="modal-content">
+                            <h2>Attention Please!</h2>
+                            <p class="project-date">2023.07 - 2023.08 (7인 팀 프로젝트/백엔드 담당)</p>
+                            <h3>📌 Summary</h3>
+                            <p><strong>발표를 두려워하는 사람들을 위한 AI기반 발표 연습 피드백 플랫폼</strong></p>
+                            <ul>
+                                <li>발표자의 언어적 요소와 비언어적 요소를 분석해 피드백 제공</li>
+                                <li>AI팀의 분석 모델과 프론트엔드 간 데이터 흐름 연결하는 Django REST API 백엔드 개발</li>
+                                <li>Swagger 기반 API 문서화 및 Postman을 활용한 백엔드 테스트 수행</li>
+                                <li>발표 이력 저장 및 시각화 기능 제공으로 사용자 성장 추적 가능</li>
+                            </ul>
+                            <h3>🧠 Background</h3>
+                            <p>주변에 발표를 어려워하는 친구들이 많았습니다. <br> 특히 저는 발표만 하면 손에 땀이 나고, 목소리도 떨릴 만큼 발표가 너무 무서웠습니다. <br> 그런데 생각해보면 연습할 공간이나 발표 피드백 받을 기회가 부족하다는 것을 깨달았습니다. <br> 그래서 연습하고 피드백까지 받을 수 있는 발표 플랫폼을 만들어보자는 데에서 이 프로젝트가 시작됐습니다. <br>자세나 제스처 같은 비언어적 요소까지 봐주는 기능이 있다면, 집에서도 충분히 발표 실력을 키울 수 있을 거라고 생각했습니다.</p>
+                            <h3>👩🏻‍💻 My Role & Contribution</h3>
+                            <ul>
+                                <li>백엔드 전반 개발 및 API 설계/구현 담당 <br>Django REST Framework를 사용해 프론트엔드와 AI 모델 간의 데이터 흐름을 연결</li>
+                                <li>Swagger 기반 API 문서 자동화 <br>drf-yasg를 사용하여 API 명세 자동 생성, 팀원 및 프론트와의 협업 효율성 향상</li>
+                                <li>Postman을 활용한 API 테스트 및 시나리오 검증 <br>각 기능별 요청/응답 흐름 테스트 및 예외 처리 케이스 점검</li>
+                            </ul>
+                            <h3>🔨 Technology Stack</h3>
+                            <p>Django Rest Framework, Swagger, Postman</p>
+                            <h3>💬 회고</h3>
+                            <p>이 프로젝트는 제 첫 팀 프로젝트였습니다. <br>처음에는 백엔드와 프론트엔드가 정확히 뭐가 다른지도 잘 몰랐고, 기술적으로 모든 게 처음이었습니다.
+                                하지만 팀원들이 배울 점이 많은 사람들이었고, 그 속에서 저도 많은 것을 배웠습니다.</p>
+                            <p>저는 팀에 짐이 되고 싶지 않았기 때문에, 수업이 끝난 뒤 혼자 공부하며 따라갔습니다. <br>덕분에 Django, Postman, Swagger 등 모든 것이 낯설었지만, 결국 백엔드 담당으로서 프로젝트를 완성할 수 있었고,
+                                그 과정에서 큰 자신감을 얻었습니다.</p>
+                            <p>이 프로젝트 이후 저는 해커톤이나 다른 프로젝트에도 적극적으로 참여하게 됐고, 그만큼 실력도 많이 성장했습니다.</p>
+                            <p>기술뿐만 아니라 팀워크, 커뮤니케이션, 팀 프로젝트의 즐거움까지 배울 수 있었던 저에게 가장 뜻깊은 경험이었습니다.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card-hover">
-                    <a href="#" class="btn">자세히 보기</a>
-                    <a href="#" class="btn">Github</a>
-                </div>
             </div>
+
         </div>
     </section>
+
+
 
     <footer class="footer">
         <p class="footer-message">Thanks for visiting my portfolio 🙌</p>

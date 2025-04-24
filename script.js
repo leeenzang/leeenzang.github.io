@@ -29,3 +29,29 @@ checkbox.addEventListener('change', function () {
         });
     }
 });
+
+
+function openModal(id) {
+    document.getElementById(id).style.display = 'flex';
+}
+
+function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+  // ESC 키로도 닫히게 (옵션)
+window.addEventListener('keydown', function (e) {
+    if (e.key === "Escape") {
+    document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
+    }
+});
+
+
+window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 20) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
