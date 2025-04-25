@@ -12,11 +12,13 @@ body {
 
 /* 섹션 헤드 (제목) 전용 스타일 */
 .section-title {
-    font-weight: 800;
-    font-size: 50px;
+    font-weight: 300;
+    font-size: 55px;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    font-family: "Black Han Sans", sans-serif;
+
 }
 
 
@@ -36,28 +38,28 @@ body {
 
 /* 공통 스타일 - 네비 안에 있는 모든 글자 기본은 투명~흰색 */
 .navbar .nav-logo,
-.navbar a {
-  color: rgba(255, 255, 255, 0.0); /* 완전 투명 가능 or 0.3~0.8 정도 */
+.navbar .nav-right a {
+  color: rgba(212, 212, 212, 0); /* 완전 투명 가능 or 0.3~0.8 정도 */
   transition: color 0.3s ease;
 }
 
 /* 스크롤 시 글씨 검정으로 */
 .navbar.scrolled .nav-logo,
 .navbar.scrolled a {
-  color: #111;
+  color: #2c2c2c;
 }
 .navbar a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8); /* 기본은 밝은 텍스트 */
+    color: rgba(81, 81, 81, 0.8); /* 기본은 밝은 텍스트 */
     font-weight: bold;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 /* 스크롤 내려오면 흰 배경 + 텍스트 색상 */
 .navbar.scrolled {
-    background-color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
 /* 📦 네비 안쪽 정렬 박스 (왼/오 나누는 flex) */
 .nav-container {
@@ -75,7 +77,6 @@ body {
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
-    color: #000000;
 }
 
 
@@ -100,6 +101,9 @@ body {
 .nav-right a:hover {
     color: #000000; /* 마우스 올렸을 때 색 바뀜 */
 }
+
+
+
 
 
 
@@ -141,13 +145,14 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
-    color: #f3efefe4;
+    color: #b1b1b199;
 }
 
 .hero-content h1 {
-    font-size: 80px;       /* 👈 간지 폭발 크기 */
-    font-weight: 700;
+    font-size: 90px;       /* 👈 간지 폭발 크기 */
+    font-weight: 200;
     line-height: 1.2;
+    font-family: "Black Han Sans", sans-serif;
 }
 
 
