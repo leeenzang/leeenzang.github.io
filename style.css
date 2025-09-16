@@ -370,6 +370,9 @@ body {
 }
 
 .activity-card {
+    display: flex; /* 세로 말고 가로 배치 */
+    justify-content: space-between; /* 왼쪽: 내용, 오른쪽: 화살표 */
+    align-items: center;
     background-color: #fff;
     border-radius: 16px;
     padding: 24px 30px;
@@ -411,7 +414,26 @@ body {
     line-height: 1.5;
 }
 
+/* 왼쪽 컨텐츠 묶음 */
+.activity-info {
+    flex: 1;
+}
 
+/* 화살표 스타일 */
+.arrow-link {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-icon {
+    width: 35px;   /* 크기 조절 */
+    transition: transform 0.2s ease;
+}
+
+.arrow-link:hover .arrow-icon {
+    transform: translateX(4px); /* 호버 시 살짝 움직이게 */
+}
 
 /*프로젝트*/
 #project {
