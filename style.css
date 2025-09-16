@@ -435,6 +435,10 @@ body {
     transform: translateX(4px); /* 호버 시 살짝 움직이게 */
 }
 
+
+
+
+
 /*프로젝트*/
 #project {
     background-color: #585858;
@@ -509,6 +513,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 
@@ -627,9 +637,8 @@ body {
     border-radius: 6px;
     cursor: pointer;
     align-self: flex-start;
+
 }
-
-
 
 
 /* 태그*/
