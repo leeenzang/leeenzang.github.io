@@ -279,6 +279,10 @@ body {
 
 }
 
+.award-link {
+    text-decoration: none;
+}
+
 /* ✅ 큰 화면에서만 4개 고정 */
 @media screen and (min-width: 1280px) {
     .award-grid {
