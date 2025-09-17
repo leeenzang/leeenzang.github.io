@@ -583,7 +583,7 @@ body {
   
   .modal-content h3 {
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 45px;
     margin-bottom: 10px;
   }
   
@@ -617,6 +617,13 @@ body {
     to { opacity: 1; transform: scale(1); }
   }
 
+
+  .modal-image {
+    width: 60%;
+    display: block;      
+    margin: 0 auto 20px; 
+    border-radius: 8px;  
+}
 
 
 .tag {
